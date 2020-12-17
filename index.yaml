@@ -3,7 +3,7 @@ entries:
   crownx-authenticate-service:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-12-17T10:52:49.8069667+07:00"
+    created: "2020-12-17T10:56:19.9548153+07:00"
     description: Helm Chart CrownX Authenticate Service
     digest: 81fa8b352709485bc488485d1d55486b21e43ebff30c88b04c041e305d42b104
     icon: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/512px-.NET_Core_Logo.svg.png
@@ -15,7 +15,7 @@ entries:
   crownx-customer-service:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-12-17T10:52:49.8078527+07:00"
+    created: "2020-12-17T10:56:19.9548153+07:00"
     description: Helm Chart CrownX Customer Service
     digest: f382148e71858ba49ec71e83f633d9d08ef58efb778cabcdd8c304e1d886a4df
     icon: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/512px-.NET_Core_Logo.svg.png
@@ -27,13 +27,13 @@ entries:
   crownx-item-service:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-12-17T10:52:49.8198506+07:00"
+    created: "2020-12-17T10:56:19.9558501+07:00"
     description: Helm chart CrownX Item Service
-    digest: ab40b160a5ebcfd2304516394f0d8d271532b10096e926b661733fd5e599c17c
+    digest: 94f80e1e3e6f051d37e665e4eda4a020e71e11cec82e5ab18f962f14dd92240b
     icon: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/512px-.NET_Core_Logo.svg.png
     name: crownx-item-service
     type: application
     urls:
     - https://hung-nguyen-97.github.io/crownx-chart/crownx-item-service-0.1.0.tgz
     version: 0.1.0
-generated: "2020-12-17T10:52:49.7728416+07:00"
+generated: "2020-12-17T10:56:19.9518495+07:00"
