@@ -3,7 +3,7 @@ entries:
   crownx-authenticate-service:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-12-17T14:48:26.4775232+07:00"
+    created: "2020-12-17T13:18:29.3764817+07:00"
     description: Helm Chart CrownX Authenticate Service
     digest: 81fa8b352709485bc488485d1d55486b21e43ebff30c88b04c041e305d42b104
     icon: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/512px-.NET_Core_Logo.svg.png
@@ -15,7 +15,7 @@ entries:
   crownx-customer-service:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-12-17T14:48:26.4795229+07:00"
+    created: "2020-12-17T13:18:29.3764817+07:00"
     description: Helm Chart CrownX Customer Service
     digest: f382148e71858ba49ec71e83f633d9d08ef58efb778cabcdd8c304e1d886a4df
     icon: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/512px-.NET_Core_Logo.svg.png
@@ -24,21 +24,10 @@ entries:
     urls:
     - https://hung-nguyen-97.github.io/crownx-chart/package/crownx-customer-service-0.1.0.tgz
     version: 0.1.0
-  crownx-dotnet-core:
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2020-12-17T14:48:26.480522+07:00"
-    description: A Helm chart for Dotnet Core Microservice
-    digest: 7993f5ba017df903e33d239f39b8f6b0a263ea7bef7a63f4bc08078a497ba907
-    name: crownx-dotnet-core
-    type: application
-    urls:
-    - https://hung-nguyen-97.github.io/crownx-chart/package/crownx-dotnet-core-0.1.0.tgz
-    version: 0.1.0
   crownx-item-service:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-12-17T14:48:26.480522+07:00"
+    created: "2020-12-17T13:18:29.3774438+07:00"
     description: Helm chart CrownX Item Service
     digest: 06f807c577327096032282339bb8851093f9e94047bfe4dcba97e34922a62521
     icon: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/512px-.NET_Core_Logo.svg.png
@@ -47,4 +36,4 @@ entries:
     urls:
     - https://hung-nguyen-97.github.io/crownx-chart/package/crownx-item-service-0.1.0.tgz
     version: 0.1.0
-generated: "2020-12-17T14:48:26.4725229+07:00"
+generated: "2020-12-17T13:18:29.3754768+07:00"
