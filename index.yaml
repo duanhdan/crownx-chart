@@ -3,7 +3,7 @@ entries:
   crownx-item-service:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-12-17T10:10:06.6615754+07:00"
+    created: "2020-12-17T10:19:20.1087112+07:00"
     description: Helm chart CrownX Item Service
     digest: ab40b160a5ebcfd2304516394f0d8d271532b10096e926b661733fd5e599c17c
     icon: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/512px-.NET_Core_Logo.svg.png
@@ -12,4 +12,4 @@ entries:
     urls:
     - https://hung-nguyen-97.github.io/crownx-chart/crownx-item-service-0.1.0.tgz
     version: 0.1.0
-generated: "2020-12-17T10:10:06.6615754+07:00"
+generated: "2020-12-17T10:19:20.1047114+07:00"
