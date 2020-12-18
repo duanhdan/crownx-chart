@@ -3,7 +3,7 @@ entries:
   crownx-authenticate-service:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-12-18T09:55:45.2435055+07:00"
+    created: "2020-12-18T10:03:17.9033523+07:00"
     description: Helm Chart CrownX Authenticate Service
     digest: 81fa8b352709485bc488485d1d55486b21e43ebff30c88b04c041e305d42b104
     icon: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/512px-.NET_Core_Logo.svg.png
@@ -15,7 +15,7 @@ entries:
   crownx-cms:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-12-18T09:55:45.2618851+07:00"
+    created: "2020-12-18T10:03:17.9043505+07:00"
     description: A Helm chart CrownX CMS
     digest: 0ba0ece32caab2c07d59ff49df9f7c6a49e5bd4f51c79e25222710f5006e2028
     icon: https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/250px-Angular_full_color_logo.svg.png
@@ -27,7 +27,7 @@ entries:
   crownx-customer-service:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-12-18T09:55:45.2910141+07:00"
+    created: "2020-12-18T10:03:17.9043505+07:00"
     description: Helm Chart CrownX Customer Service
     digest: f382148e71858ba49ec71e83f633d9d08ef58efb778cabcdd8c304e1d886a4df
     icon: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/512px-.NET_Core_Logo.svg.png
@@ -39,7 +39,7 @@ entries:
   crownx-dotnet-core:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-12-18T09:55:45.3000638+07:00"
+    created: "2020-12-18T10:03:17.905353+07:00"
     description: A Helm chart for Dotnet Core Microservice
     digest: 7993f5ba017df903e33d239f39b8f6b0a263ea7bef7a63f4bc08078a497ba907
     name: crownx-dotnet-core
@@ -50,7 +50,7 @@ entries:
   crownx-item-service:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-12-18T09:55:45.3080732+07:00"
+    created: "2020-12-18T10:03:17.906351+07:00"
     description: Helm chart CrownX Item Service
     digest: 06f807c577327096032282339bb8851093f9e94047bfe4dcba97e34922a62521
     icon: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/512px-.NET_Core_Logo.svg.png
@@ -62,7 +62,7 @@ entries:
   crownx-notification-service:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-12-18T09:55:45.3251233+07:00"
+    created: "2020-12-18T10:03:17.906351+07:00"
     description: A Helm chart for CrownX Notification Service
     digest: 924c4f08a827d74e088ab9488a833106a231d9a6068a3b0546480c7d15199259
     icon: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/512px-.NET_Core_Logo.svg.png
@@ -74,7 +74,7 @@ entries:
   crownx-sales-price-service:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-12-18T09:55:45.3512566+07:00"
+    created: "2020-12-18T10:03:17.9073178+07:00"
     description: A Helm chart for CrownX Sales Price Service
     digest: 76772384dff052d6385ff30956c30a827ec740fceb7f9d03572a117d2cbcb404
     icon: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/512px-.NET_Core_Logo.svg.png
@@ -86,7 +86,7 @@ entries:
   crownx-share-categories-service:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-12-18T09:55:45.3752019+07:00"
+    created: "2020-12-18T10:03:17.9083503+07:00"
     description: A Helm chart for CrownX Share Categories Service
     digest: c6345d9c14ee6002c2eef298a27e7c3cb54a2eec283d94e8f47e2368f336b168
     icon: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/512px-.NET_Core_Logo.svg.png
@@ -98,7 +98,7 @@ entries:
   crownx-third-party-service:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-12-18T09:55:45.3762422+07:00"
+    created: "2020-12-18T10:03:17.9083503+07:00"
     description: A Helm chart for CrownX Third Party Service
     digest: 61fae82c2c8e428eae5f83ad96b438b05e5062bb42ac4708d1d87b00189b65c7
     icon: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/512px-.NET_Core_Logo.svg.png
@@ -107,4 +107,16 @@ entries:
     urls:
     - https://hung-nguyen-97.github.io/crownx-chart/package/crownx-third-party-service-0.1.0.tgz
     version: 0.1.0
-generated: "2020-12-18T09:55:45.1998172+07:00"
+  crownx-transaction-service:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-12-18T10:03:17.9093501+07:00"
+    description: A Helm chart for CrownX Transaction Service
+    digest: 76bc79320c45cb59eb56b0c2fea7ccb5bad8a5ebf35798b0e023812e4382e9f0
+    icon: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/512px-.NET_Core_Logo.svg.png
+    name: crownx-transaction-service
+    type: application
+    urls:
+    - https://hung-nguyen-97.github.io/crownx-chart/package/crownx-transaction-service-0.1.0.tgz
+    version: 0.1.0
+generated: "2020-12-18T10:03:17.9033523+07:00"
