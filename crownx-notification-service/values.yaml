@@ -5,10 +5,23 @@
 replicaCount: 1
 
 image:
-  repository: nginx
-  pullPolicy: IfNotPresent
+  repository: masangroup/crownx-notification
+  pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: "staging"
+  ports:
+    - name: http
+      containerPort: 30013
+      protocol: TCP
+  env:
+  heathCheck:
+    enable: false
+    livenessProbe:
+        path: /
+        port: http
+    readinessProbe:
+        path: /
+        port: http
 
 imagePullSecrets: []
 nameOverride: ""
@@ -37,8 +50,8 @@ securityContext: {}
   # runAsUser: 1000
 
 service:
-  type: ClusterIP
-  port: 80
+  type: NodePort
+  port: 30013
 
 ingress:
   enabled: false

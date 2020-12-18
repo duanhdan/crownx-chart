@@ -1,6 +1,6 @@
 apiVersion: v2
 name: crownx-customer-service
-description: Helm Chart CrownX Customer Service
+description: A Helm Chart for CrownX Customer Service
 
 # A chart can be either an 'application' or a 'library' chart.
 #
