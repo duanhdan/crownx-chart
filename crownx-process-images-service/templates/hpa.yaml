@@ -2,14 +2,14 @@
 apiVersion: autoscaling/v2beta1
 kind: HorizontalPodAutoscaler
 metadata:
-  name: {{ include "crownx-process-images-app.fullname" . }}
+  name: {{ include "crownx-process-images-service.fullname" . }}
   labels:
-    {{- include "crownx-process-images-app.labels" . | nindent 4 }}
+    {{- include "crownx-process-images-service.labels" . | nindent 4 }}
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: {{ include "crownx-process-images-app.fullname" . }}
+    name: {{ include "crownx-process-images-service.fullname" . }}
   minReplicas: {{ .Values.autoscaling.minReplicas }}
   maxReplicas: {{ .Values.autoscaling.maxReplicas }}
   metrics:

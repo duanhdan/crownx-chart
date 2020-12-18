@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "crownx-process-images-app.fullname" . }}
+  name: {{ include "crownx-process-images-service.fullname" . }}
   labels:
-    {{- include "crownx-process-images-app.labels" . | nindent 4 }}
+    {{- include "crownx-process-images-service.labels" . | nindent 4 }}
 spec:
   {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
   {{- end }}
   selector:
     matchLabels:
-      {{- include "crownx-process-images-app.selectorLabels" . | nindent 6 }}
+      {{- include "crownx-process-images-service.selectorLabels" . | nindent 6 }}
   template:
     metadata:
       {{- with .Values.podAnnotations }}
@@ -18,13 +18,13 @@ spec:
         {{- toYaml . | nindent 8 }}
       {{- end }}
       labels:
-        {{- include "crownx-process-images-app.selectorLabels" . | nindent 8 }}
+        {{- include "crownx-process-images-service.selectorLabels" . | nindent 8 }}
     spec:
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-      serviceAccountName: {{ include "crownx-process-images-app.serviceAccountName" . }}
+      serviceAccountName: {{ include "crownx-process-images-service.serviceAccountName" . }}
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
       containers:
@@ -56,9 +56,19 @@ spec:
               path: {{ .Values.image.heathCheck.readinessProbe.path }}
               port: {{ .Values.image.heathCheck.readinessProbe.port }}
           {{- end }}
-
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
+          volumeMounts:
+            {{- range .Values.image.volumeMounts }}
+            - mountPath: {{ .mountPath }}
+              name: {{ .name }}
+            {{- end }}
+      volumes:
+      {{- range .Values.volumes }}
+        - name: {{ .name }}
+          persistentVolumeClaim:
+            claimName: {{ .claimName }}
+      {{- end }}
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}

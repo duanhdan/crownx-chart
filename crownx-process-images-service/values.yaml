@@ -1,11 +1,11 @@
-# Default values for crownx-process-images-app.
+# Default values for crownx-process-images-service.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
 replicaCount: 1
 
 image:
-  repository: nginx
+  repository: masangroup/crownx-processimages
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
@@ -13,12 +13,24 @@ image:
     - name: http
       containerPort: 30027
       protocol: TCP
-
   env:
-
+    URL_DATA_ROOT: https://sandbox-api-crownx.winmart.vn/im/images/
+    SPRING_PROFILES_ACTIVE: dev,swagger
+    SPRING_DATASOURCE_USERNAME: admin
+    SPRING_DATASOURCE_URL: jdbc:postgresql://crownx-postgresql:5432/processImages
+    SPRING_DATASOURCE_PASSWORD: 123qwe
+    PATH_DATA_ROOT: /home/data/data/
+    MANAGEMENT_METRICS_EXPORT_PROMETHEUS_ENABLED: true
+    EUREKA_INSTANCE_PREFER_IP_ADDRESS: false
+    EUREKA_INSTANCE_HOSTNAME: processimages-app
+    EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE: http://crownx-eureka:8761/eureka/
+    _JAVA_OPTIONS: -Xmx512m -Xms256m
+  volumeMounts:
+    # - mountPath: "/usr/share/nginx/html"
+    #   name: task-pv-storage
 
   heathCheck:
-    enable: true
+    enable: false
     livenessProbe:
         path: /
         port: http
@@ -26,7 +38,9 @@ image:
         path: /
         port: http
 
-
+volumes:
+  # - name: task-pv-storage
+  #   claimName: pv-claim-demo
 
 imagePullSecrets: []
 nameOverride: ""
@@ -34,7 +48,7 @@ fullnameOverride: ""
 
 serviceAccount:
   # Specifies whether a service account should be created
-  create: false
+  create: true
   # Annotations to add to the service account
   annotations: {}
   # The name of the service account to use.
@@ -57,7 +71,6 @@ securityContext: {}
 service:
   type: NodePort
   port: 30027
-
 
 ingress:
   enabled: false
